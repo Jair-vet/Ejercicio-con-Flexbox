@@ -67,3 +67,11 @@ h1, h2 {
     padding: 5rem;
 }
 
+/* 1 */
+/* 
+? Por Defecto se Ponen uno aun lado del otro 
+? Cuando inicializamos nuetra caja de flexbox. 
+*/
+.d-flex{
+    display: flex;
+}
