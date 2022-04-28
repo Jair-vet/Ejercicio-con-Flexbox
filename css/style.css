@@ -108,6 +108,26 @@ h1, h2 {
     flex-direction: column;
     height: 1000px;
 
+    /* alinear de Izquierda a Derecha */
     justify-content: space-around;
 }
 
+/* 5 */
+.d-flex-5{
+    /* Se estiran con la altura  */
+    display: flex;
+    height: 700px;
+
+    /* Alinear de Abajo a Arriba */
+    align-items: flex-end;
+     /* stretch: Estira el tamaño
+        flex-start: Coloca en la parte de arrriba
+        flex-end: lo posiciona en la parte de abajo
+        flex-center: centra el contenido
+        baseline: 
+     */
+}
+
+.d-flex-6{
+    display: flex;
+}
