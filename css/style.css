@@ -87,3 +87,27 @@ h1, h2 {
         row-reverse
     */
 }
+
+/* 3 */
+.d-flex-3{
+    display: flex;
+    justify-content: space-evenly;
+    /* 
+        flex-start
+        center
+        flex-end 
+        space-evenly
+        space-between
+        space-around
+    */
+}
+
+/* 4 */
+.d-flex-4{
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+
+    justify-content: space-around;
+}
+
