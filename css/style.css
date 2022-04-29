@@ -203,3 +203,28 @@ h1, h2 {
 .d-flex-10 .box{
     flex-basis: calc(33.3%);
 }
+
+
+/* 11 */
+.d-flex-11{
+    display: flex;
+}
+.d-flex-11 .box:nth-child(1){
+    /* 1: Crece hasta tomar todo el espacio disponible */
+    /* 
+        ?flex-grow
+        es el factor de crecimiento.
+        -> Ese el mismo para todos
+        -> Por defecto no hay factor de crecimiento
+        -> Numero (Cantidad de pixeles que recibe un elemento).
+        
+
+    */
+    flex-grow: 1;
+}
+.d-flex-11 .box:nth-child(2){
+    flex-grow: 3;
+}
+.d-flex-11 .box:nth-child(3){
+    flex-grow: 5;
+}
