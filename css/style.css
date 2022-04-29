@@ -171,3 +171,15 @@ h1, h2 {
     flex-basis: 33.3%;
     flex-basis: 200px;
 }
+
+
+/* 9 */
+/* ? Gap y Calc */
+.d-flex-9{
+    display: flex;
+    justify-content: space-between;
+    /* Gap: te permite crear separacion */
+}
+.d-flex-9 .box{
+    flex-basis: calc(33.3% - 1rem);
+}
