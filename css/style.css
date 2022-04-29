@@ -180,6 +180,26 @@ h1, h2 {
     justify-content: space-between;
     /* Gap: te permite crear separacion */
 }
-.d-flex-9 .box{
-    flex-basis: calc(33.3% - 1rem);
+.d-flex-9 .box:nth-child(1){
+    flex-basis: calc(50% - 1rem);
+}
+.d-flex-9 .box:nth-child(2),
+.d-flex-9 .box:nth-child(3){
+    flex-basis: calc(25% - 1rem);
+}
+
+/* 10 */
+/* ? Flex Wrap */
+/* El estandar agrega un nowrap 
+    El cual hace que contenido sigan
+    hacia la derecha.
+*/
+.d-flex-10{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; */
+
+}
+.d-flex-10 .box{
+    flex-basis: calc(33.3%);
 }
