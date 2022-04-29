@@ -68,6 +68,7 @@ h1, h2 {
 }
 
 /* 1 */
+/* ? Display Flex */
 /* 
 ? Por Defecto se Ponen uno aun lado del otro 
 ? Cuando inicializamos nuetra caja de flexbox. 
@@ -82,6 +83,7 @@ h1, h2 {
 }
 
 /* 2  */
+/* ?  Flex Direction */
 /* 
 ? Automaticamante se inicia un Flex-direction
 */
@@ -94,6 +96,7 @@ h1, h2 {
 }
 
 /* 3 */
+/* ? Justify Content (Dirección Row) */
 .d-flex-3{
     display: flex;
     justify-content: space-evenly;
@@ -108,6 +111,7 @@ h1, h2 {
 }
 
 /* 4 */
+/* ? Justify Content (Dirección Column) */
 .d-flex-4{
     display: flex;
     flex-direction: column;
@@ -118,6 +122,7 @@ h1, h2 {
 }
 
 /* 5 */
+/* ? Align Items (Dirección Row) */
 .d-flex-5{
     /* Se estiran con la altura  */
     display: flex;
@@ -134,6 +139,7 @@ h1, h2 {
 }
 
 /* 6 */
+/* ? Align Items (Dirección Columna) */
 .d-flex-6{
     display: flex;
     flex-direction: column;
@@ -149,6 +155,7 @@ h1, h2 {
 }
 
 /* 7 */
+/* ? Align Items y JustifyContent */
 .d-flex-7{
     display: flex;
     height: 800px;
@@ -161,7 +168,7 @@ h1, h2 {
 
 /* 8 */
 /* ? Flex Basis */
-/* ! Se le agrega al Hijo de cada elemento
+/*  Se le agrega al Hijo de cada elemento
     Debemos crear ota clase la cual es la que sera alterada
  */
 .d-flex-8{
@@ -206,6 +213,7 @@ h1, h2 {
 
 
 /* 11 */
+/*  ? Flex Grow */
 .d-flex-11{
     display: flex;
 }
@@ -213,12 +221,11 @@ h1, h2 {
     /* 1: Crece hasta tomar todo el espacio disponible */
     /* 
         ?flex-grow
-        es el factor de crecimiento.
+        Factor de crecimiento.
         -> Ese el mismo para todos
         -> Por defecto no hay factor de crecimiento
         -> Numero (Cantidad de pixeles que recibe un elemento).
         
-
     */
     flex-grow: 1;
 }
@@ -227,4 +234,20 @@ h1, h2 {
 }
 .d-flex-11 .box:nth-child(3){
     flex-grow: 5;
+}
+
+
+/* 12 */
+/* ? Flex Shrink */
+/* Como se va haciendo pequeño un elemento */
+.d-flex-12{
+    display: flex;
+}
+
+.d-flex-12 .box{
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+.d-flex-12 .box:nth-child(3){
+    flex-shrink: 2;
 }
