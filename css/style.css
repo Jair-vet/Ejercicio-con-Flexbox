@@ -251,3 +251,18 @@ h1, h2 {
 .d-flex-12 .box:nth-child(3){
     flex-shrink: 2;
 }
+
+
+/* 13 */
+/* ? Flex Shorthand */
+.d-flex-13{
+    display: flex;
+}
+.d-flex-13 .box{
+    /* flex-basis: 33.3%;
+    flex-grow: 1;
+    flex-shrink: 1; */
+
+    /* Es una version mas corta */
+    flex: 1 0;
+}
